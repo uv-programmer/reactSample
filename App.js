@@ -1,15 +1,35 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 
-export default function App() {
+  function Cat() {
+  const name = "Vishnu"
+  function getFullString(frstName,LastName){
+    return (frstName + LastName);
+  }
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+  <Text>Hello, I am your {getFullString(5,5)}</Text>
+
   );
-}
+  }
+
+  export default function listed() {
+    return (
+      <View>
+  <Cat/>
+  <Cat/>
+  <Cat/>
+  <Cat/>
+  <Cat/>
+  </View>
+    );
+  }
+  
+
+
+
+
+
 
 const styles = StyleSheet.create({
   container: {
